@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CashierClass.cs" />
+    <Compile Include="peekForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="peekForm.Designer.cs">
+      <DependentUpon>peekForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="QueuingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CashierWindowForm.resx">
       <DependentUpon>CashierWindowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="peekForm.resx">
+      <DependentUpon>peekForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QueuingForm.resx">
       <DependentUpon>QueuingForm.cs</DependentUpon>

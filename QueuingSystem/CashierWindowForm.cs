@@ -12,8 +12,10 @@ using System.Windows.Forms;
 namespace QueuingSystem
 {
     public partial class CashierWindowQueueForm : Form
+
     {
         private Timer timer;
+        peekForm peekForm = new peekForm();
         public CashierWindowQueueForm()
         {
             InitializeComponent();
@@ -21,6 +23,11 @@ namespace QueuingSystem
             timer.Interval = 1000;
             timer.Tick += Timer_Tick;
             timer.Start();
+
+
+
+            
+           
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -35,11 +42,18 @@ namespace QueuingSystem
 
         private void btnNext_Click(object sender, EventArgs e)
         {
+           
+            peekForm.ShowDialog();
+            
+            
+
             if (CashierClass.CashierQueue.Count > 0)
             {
                 string removed = CashierClass.CashierQueue.Dequeue();
 
             }
+
+
 
         }
         public void DisplayCashierQueue(IEnumerable CashierList)
