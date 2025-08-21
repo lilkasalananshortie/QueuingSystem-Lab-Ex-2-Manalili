@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,13 +15,29 @@ namespace QueuingSystem
     {
         public peekForm()
         {
+            
             InitializeComponent();
             
         }
-
+        public void DisplayCashierQueue(IEnumerable CashierList)
+        {
+            nextInLine.Items.Clear();
+            bool removeFirst = true;
+            foreach (Object obj in CashierList)
+            {
+                if (removeFirst)
+                {
+                    removeFirst = false;    
+                    continue;
+                }
+                nextInLine.Items.Add(obj.ToString());
+            }
+        }
         private void peekForm_Load(object sender, EventArgs e)
         {
             nowServingLabel.Text = CashierClass.CashierQueue.Peek();
+            DisplayCashierQueue(CashierClass.CashierQueue);
+
         }
 
         private void nowServingLabel_Click(object sender, EventArgs e)
@@ -31,6 +48,11 @@ namespace QueuingSystem
         private void closeButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

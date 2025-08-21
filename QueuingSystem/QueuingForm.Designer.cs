@@ -36,11 +36,11 @@
             // 
             // cashierButton
             // 
-            this.cashierButton.BackColor = System.Drawing.Color.SteelBlue;
-            this.cashierButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cashierButton.Location = new System.Drawing.Point(72, 71);
+            this.cashierButton.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cashierButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cashierButton.Location = new System.Drawing.Point(24, 252);
             this.cashierButton.Name = "cashierButton";
-            this.cashierButton.Size = new System.Drawing.Size(183, 155);
+            this.cashierButton.Size = new System.Drawing.Size(424, 155);
             this.cashierButton.TabIndex = 0;
             this.cashierButton.Text = "Cashier";
             this.cashierButton.UseVisualStyleBackColor = false;
@@ -50,31 +50,32 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Teal;
-            this.label1.Location = new System.Drawing.Point(12, 249);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(96, 421);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(299, 29);
+            this.label1.Size = new System.Drawing.Size(284, 29);
             this.label1.TabIndex = 1;
-            this.label1.Text = "* Click to Get a Number";
+            this.label1.Text = " Click to Get a Number";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Teal;
-            this.label2.Location = new System.Drawing.Point(295, 60);
+            this.label2.Location = new System.Drawing.Point(16, 41);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(348, 34);
+            this.label2.Size = new System.Drawing.Size(443, 44);
             this.label2.TabIndex = 2;
             this.label2.Text = "Your Position In Queue";
             // 
             // lblQueue
             // 
             this.lblQueue.AutoSize = true;
-            this.lblQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQueue.Location = new System.Drawing.Point(351, 133);
+            this.lblQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQueue.ForeColor = System.Drawing.Color.Teal;
+            this.lblQueue.Location = new System.Drawing.Point(88, 122);
             this.lblQueue.Name = "lblQueue";
-            this.lblQueue.Size = new System.Drawing.Size(98, 55);
+            this.lblQueue.Size = new System.Drawing.Size(130, 73);
             this.lblQueue.TabIndex = 3;
             this.lblQueue.Text = "P - ";
             // 
@@ -83,7 +84,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
-            this.ClientSize = new System.Drawing.Size(645, 330);
+            this.ClientSize = new System.Drawing.Size(475, 499);
             this.Controls.Add(this.lblQueue);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

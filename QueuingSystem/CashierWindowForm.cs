@@ -44,17 +44,12 @@ namespace QueuingSystem
         {
            
             peekForm.ShowDialog();
-            
-            
 
             if (CashierClass.CashierQueue.Count > 0)
             {
                 string removed = CashierClass.CashierQueue.Dequeue();
 
             }
-
-
-
         }
         public void DisplayCashierQueue(IEnumerable CashierList)
         {
